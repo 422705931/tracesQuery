@@ -1,0 +1,30 @@
+<!--logs.wxml-->
+ <view class="page"> 
+<view class="section">
+  <input class="inputView" id='firstInput' bindblur="bindBlur" placeholder="再此输入邮件号" value="{{yjcode}}" auto-focus/>
+  <button class="weui-btn" bindtap="bindButtonTap">提交查询</button>
+  <button class="weui-btn" type="primary" bindtap="bindScanButton">扫码</button>
+  <view class="page__bd">
+        <view class="weui-btn-area">
+            <button class='weui-btn' type="default" bindtap="open">点此给我们EMS快递员评价</button>
+        </view>
+    </view>
+    <picker bindchange="bindPickerChange" value="{{index+1}}" range="{{array}}">
+                <button class='weui-btn' type="default">点此给我们EMS快递员评价</button>
+    </picker>
+  <block wx:for="{{list}}" wx:for-index="acceptTime">
+  <view class='traces-item'>
+  <text>{{item.acceptTime}}{{'\n'}}</text>
+  <text>{{item.acceptAddress}}{{'\n'}}</text>
+  <text>{{item.remark}}{{'\n'}}</text>
+  </view>
+  </block>
+</view>
+
+</view>
+<view class="weui-footer">
+<view class="weui-footer__links">
+    <navigator url="" class="weui-footer__link">南京EMS</navigator>
+</view>
+<view class="weui-footer__text">Copyright ☛ 精品专栏组</view>
+</view>

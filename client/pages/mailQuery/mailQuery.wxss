@@ -1,0 +1,31 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+.traces-item {
+  /* display: flex; */
+  /* flex-direction: row; */
+  justify-content: space-between;
+  padding-left: 8px;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 8px;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-bottom: 1px solid #d0d0d0;
+  border-radius: 5px;
+}
+.inputView {
+  display: flex;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 8px;
+  justify-content: space-between;
+}
